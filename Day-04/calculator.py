@@ -1,15 +1,28 @@
+import sys
 def Name(a,b):
-    name=a+" "+b
+    name=a+b
     return name
-print(Name("Hi","I'm Shaurya"))
 
-def Age(num1,num2):
-    days=num1+num2
+
+def Age(c,d):
+    days=float(c+d)
     return days
 
-print("Age:", Age(30,10), "Days")
 
 def Fingers(l_l_fingers,r_l_fingers,l_hand,r_hand):
     total=l_l_fingers+r_l_fingers+l_hand+r_hand
     return total
-print("I have total:", Fingers(5,5,5,5), "Fingers")
+
+a=sys.argv[1]
+b=sys.argv[2]
+c=float(sys.argv[1])
+d=float(sys.argv[2])
+f_condition=float(sys.argv[3])
+condition=sys.argv[3]
+if condition == "Name":
+    name= Name(a, b)
+    print(name)
+elif f_condition == "Age":
+    days= Age(c,d)
+    print(days)
+    
